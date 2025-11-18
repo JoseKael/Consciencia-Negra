@@ -5,60 +5,63 @@ body {
     background: #0f0f0f;
     color: #fff;
     line-height: 1.6;
-  }
-  
-  h1, h2 {
+    overflow-x: hidden; /* impede coisas pra fora da tela */
+}
+
+h1, h2 {
     margin: 0;
-  }
-  
-  /* ======== CABEÇALHO ======== */
-  header {
+}
+
+/* ======== CABEÇALHO ======== */
+header {
     background: #111;
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #e63946; /* vermelho */
-  }
-  
-  header h1 {
+    border-bottom: 3px solid #e63946;
+}
+
+header h1 {
     font-size: 32px;
     margin-bottom: 10px;
-  }
-  
-  nav a {
-    color: #ffcc00; /* amarelo */
+}
+
+nav a {
+    color: #ffcc00;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
     color: #e63946;
-  }
-  
-  /* ======== HERO (CAPA) ======== */
-  .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), 
-      url('Dia-da-Consciencia-Negra-e-feriado-Entenda-origem-e-explicacao-sobre-data.webp') center/cover no-repeat;
+}
+
+/* ======== HERO ======== */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),
+    url('Dia-da-Consciencia-Negra-e-feriado-Entenda-origem-e-explicacao-sobre-data.webp')
+    center/cover no-repeat;
+    
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px;
-  }
-  
-  .hero-content h2 {
+}
+
+.hero-content h2 {
     font-size: 40px;
     color: #ffcc00;
-  }
-  
-  .hero-content p {
+}
+
+.hero-content p {
     font-size: 18px;
     margin: 15px 0;
-  }
-  
-  .btn {
+}
+
+.btn {
     display: inline-block;
     padding: 12px 25px;
     background: #e63946;
@@ -67,36 +70,80 @@ body {
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background: #b02432;
-  }
-  
-  /* ======== SEÇÕES ======== */
-  .content {
+}
+
+/* ======== SEÇÕES ======== */
+.content {
     padding: 40px 20px;
     max-width: 900px;
     margin: auto;
-  }
-  
-  .content h2 {
+}
+
+.content h2 {
     font-size: 28px;
     color: #ffcc00;
     margin-bottom: 10px;
-  }
-  
-  .dark {
+}
+
+.content img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 6px;
+    display: block;
+    margin: 20px auto;
+}
+
+.dark {
     background: #1a1a1a;
-    border-left: 5px solid #e63946; /* destaque vermelho */
-  }
-  
-  /* ======== RODAPÉ ======== */
-  footer {
+    border-left: 5px solid #e63946;
+}
+
+/* ======== RODAPÉ ======== */
+footer {
     text-align: center;
     padding: 20px;
     background: #111;
     border-top: 3px solid #e63946;
     margin-top: 40px;
-  }
-  
+}
+
+/* =======================================
+   RESPONSIVIDADE (CELULAR)
+======================================= */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .hero {
+        height: 50vh;
+        padding: 10px;
+        background-position: center;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .content {
+        padding: 20px 15px;
+    }
+
+    .content h2 {
+        font-size: 22px;
+    }
+}

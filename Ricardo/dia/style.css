@@ -3,6 +3,7 @@ body {
     font-family: Arial;
     background: #f4f4f4;
     color: #222;
+    overflow-x: hidden; /* evita vazar para os lados */
 }
 
 header {
@@ -48,4 +49,40 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
+}
+
+/* =======================================
+        RESPONSIVIDADE PARA CELULAR
+======================================= */
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .hero img {
+        max-height: 250px;
+    }
+
+    .bio, .fotos {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .galeria img {
+        width: 100%;      /* ocupa toda a largura no celular */
+        height: auto;     /* evita distorção */
+        max-width: 350px; /* limite */
+    }
 }
