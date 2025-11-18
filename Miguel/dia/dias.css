@@ -1,0 +1,102 @@
+/* ======== CONFIGURAÇÕES GERAIS ======== */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    margin: 0;
+  }
+  
+  /* ======== CABEÇALHO ======== */
+  header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #e63946; /* vermelho */
+  }
+  
+  header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  nav a {
+    color: #ffcc00; /* amarelo */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    color: #e63946;
+  }
+  
+  /* ======== HERO (CAPA) ======== */
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), 
+      url('Dia-da-Consciencia-Negra-e-feriado-Entenda-origem-e-explicacao-sobre-data.webp') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-content h2 {
+    font-size: 40px;
+    color: #ffcc00;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #e63946;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #b02432;
+  }
+  
+  /* ======== SEÇÕES ======== */
+  .content {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .content h2 {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  .dark {
+    background: #1a1a1a;
+    border-left: 5px solid #e63946; /* destaque vermelho */
+  }
+  
+  /* ======== RODAPÉ ======== */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    border-top: 3px solid #e63946;
+    margin-top: 40px;
+  }
+  
